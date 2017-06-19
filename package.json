@@ -1,0 +1,21 @@
+{
+  "name": "scaffold",
+  "version": "1.0.0",
+  "description": "scaffolding tool",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "scaffold": "index.js"
+  },
+  "author": "Leo Nistor",
+  "license": "ISC",
+  "dependencies": {
+    "caporal": "^0.6.0",
+    "colors": "^1.1.2",
+    "prompt": "^1.0.0",
+    "shelljs": "^0.7.8"
+  }
+}
