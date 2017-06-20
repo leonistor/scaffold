@@ -1,0 +1,20 @@
+{
+  "name": "[NAME]",
+  "version": "1.0.0",
+  "description": "[DESCRIPTION]",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leo Nistor",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^16.4.3",
+    "blipp": "^2.3.0",
+    "hapi-pino": "^1.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0"
+  }
+}
