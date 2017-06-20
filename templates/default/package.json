@@ -1,0 +1,20 @@
+{
+  "name": "[NAME]",
+  "description": "[DESCRIPTION]",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
+  },
+  "author": "Test Author",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "hapi": "^16.1.0",
+    "hoek": "^4.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
