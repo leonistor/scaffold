@@ -12,7 +12,8 @@ server.register(
   {
     register: require('hapi-pino'),
     options: {
-      prettyPrint: true
+      prettyPrint: true,
+      logEvents: 'request-error'
     }
   },
 ], 
