@@ -10,17 +10,32 @@ server.register(
     options: {}
   },
   {
-    register: require('hapi-pino'),
+    register: require('good'),
     options: {
-      prettyPrint: true,
-      logEvents: 'request-error'
+      ops: { interval: 10000 },
+      reporters: {
+        myConsoleReporter: [ 
+          {
+            module: 'good-squeeze',
+            name: 'Squeeze',
+            args: [{ log: '*', response: '*' }]
+          },
+          { 
+            module: 'good-console',
+            args: [{
+              format: 'YYYY.MM.DD/HH:mm:ss.SSS'
+            }]
+          }, 
+          'stdout' 
+        ]
+      }
     }
   },
 ], 
 (err) => {
   if (err) throw err
   server.start(() => {
-    server.log(`Server started at ${new Date().toTimeString()}`)
+    server.log(`Server started`)
   })
 })
 
